@@ -1,0 +1,730 @@
+body{
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container1{
+    background-color: rgb(164, 198, 59);
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.contain{
+    width:80%;
+    height:6vh;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+.contact{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 10px;
+    color: white;
+}
+.contact div{
+    padding: 0 10px 0 0;
+}
+.mails{
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
+    align-items: center;
+}
+.v1 {
+    border-left:0.5px solid lightgray;
+    height:6vh;
+}
+.mails span {
+    color: white;
+    justify-content: center;
+    margin:0 auto;
+}
+.mails span:hover{
+    cursor: pointer;
+}
+.presentaion{
+    height:85vh;
+    background: url("../photos/brainstorm-meeting.jpg") no-repeat center;
+    background-size: cover;
+    display:flex;
+}
+.shadow{
+    color:white;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+.container2{
+    width: 80%;
+    margin:0 auto;
+    height:15%;
+    display:flex;
+    align-items: center;
+    animation: fadeInLeftBig 3s ease-in-out;
+}
+.animate1{
+    animation: fadeInTopLeft 3s ease-in-out;
+}
+.container2 h1{
+    flex:1;
+    justify-content: flex-start;
+}
+.container2 nav{
+    flex:2;
+    width:40%;
+    justify-content: flex-end;
+    display:flex;
+}
+nav{
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav li{
+    text-decoration: none;
+    -o-transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+    -moz-transition: 1s all linear;
+    -ms-transition: 1s all linear;
+
+    transition: 1s all linear;
+    margin:0 2em;
+    font-size: 1.3em;
+}
+nav li:hover{
+    text-decoration: underline;
+    color: rgb(164, 198, 59);
+    cursor: pointer;
+}
+.container3{
+    margin:-15em auto;
+    width:70%;
+    display: none;
+    -webkit-transition:all 1s linear;
+    -moz-transition:all 1s linear;
+    -ms-transition:all 1s linear;
+    -o-transition:all 1s linear;
+    transition:all 1s linear;
+}
+.container3 h2 ,.container3 h1{
+    text-transform: capitalize;
+}
+.container3 h2{
+    color:rgb(164, 198, 59) ;
+    font-size: 2em;
+    margin: 0;
+}
+.container3 h1{
+    font-size: 3em;
+    width: 40%;
+    margin-top:0.2em;
+}
+.container3 p{
+    width: 60%;
+    line-height: 1.8em;
+    font-size: 1.1em;
+    color:#d3cfdb;
+}
+.button1{
+    width:13%;
+    height:6.5vh;
+    border-radius: 15px ;
+    margin-top: 2em;
+    outline: none;
+    background-color: rgb(164, 198, 59) ;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    display: none;
+}
+.button1:active{
+    animation: rubberBand 2s ease-in-out;
+}
+.flip{
+    animation: flip 3s ease-in-out;
+}
+.request{
+    height: 17vh;
+    background-color:rgb(164, 198, 59) ;
+}
+.container4{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: center;
+}
+.pre1{
+    flex: 2;
+}
+.pre1 p{
+    color: #6d6b72;
+}
+.pre2{
+    flex:1;
+    display: flex;
+    margin-top: 1em;
+    justify-content: flex-end;
+}
+.pre2 button{
+    width:30%;
+    height:6.5vh;
+    border-radius: 15px ;
+    color:white;
+    background-color: rgb(164, 198, 59) ;
+    font-weight: bold;
+    border: 2px solid white;
+    outline: none;
+    -o-transition: 1s all linear;
+    -webkit-transition: 1s all linear;
+    -moz-transition: 1s all linear;
+    -ms-transition: 1s all linear;
+
+    transition: 1s all linear;
+    cursor: pointer;
+}
+.pre2 button:hover{
+    animation: rubberBand 2s ease-in-out;
+}
+.container5{
+    width: 50%;
+    margin: auto;
+}
+.container5 h1{
+    margin-top: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+}
+.container5 p{
+    color: #6d6b72;
+    font-size: 1.3em;
+}
+.container5 h1 span{
+    color:rgb(164, 198, 59)
+}
+.container6{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.card{
+    background-color: #dad5d96e;
+    border-radius: 15px ;
+    margin: 0 2em; 
+    width:30%;
+    height:50vh;
+    visibility: hidden;
+}
+.pulse{
+    animation: zoomIn 2s ease-in-out;
+}
+.cardImg1, .cardImg2 ,.cardImg3{
+    height:40%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 0;
+}
+.cardImg1{
+    background: url("../photos/crowd-participating-at-event.jpg") no-repeat center;
+    background-size: cover;
+}
+.cardImg2{
+    background: url("../photos/team-sales-business-meeting.jpg") no-repeat center;
+    background-size: cover;
+}
+.cardImg3{
+    background: url("../photos/reading-charts-at-business-meeting.jpg") no-repeat center;
+    background-size: cover;
+    
+}
+.cardP ,.cardH ,.cardB{
+    padding: 0 2em;
+    margin-top: 1em;
+
+}
+.cardH{
+    text-transform: capitalize;
+}
+.cardP ,.pre3 p{
+    color: #6d6b72;
+}
+.cardB {
+    width:40%;
+    height:6vh;
+    border-radius: 50px ;
+    margin-left: 2em;
+    outline: none;
+    background-color: rgb(164, 198, 59) ;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.cardB:hover{
+    animation: rubberBand 2s ease-in-out;
+}
+.container7{
+    height:80vh;
+    background: url("../photos/taking-notes-and-working-on-laptop.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 5em;
+}
+.shadow2{
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+    height:72vh;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+}
+.content3{
+    flex:1;
+    visibility: hidden;
+}
+.content4{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    visibility: hidden;
+}
+.fadeInRight{
+    animation: fadeInRight 2s ease-in-out;
+}
+.fadeInLeft{
+    animation: fadeInLeft 2s ease-in-out;
+}
+.content3 h1{
+    font-weight: bold;
+    font-size: 3em;
+}
+.content3 h1 span,.pre3 h1 span,.content5 h1 span{
+    color: rgb(164, 198, 59);
+}
+.content3 p{
+    color: #c7c3d1;
+}
+.content3 button{
+    width:18%;
+    height:6vh;
+    border-radius: 50px ;
+    outline: none;
+    background-color: rgb(164, 198, 59) ;
+    color: white;
+    font-weight: bold;
+}
+.content4 div{
+    margin: 2em;
+    width:33%;
+    height:17vh;
+    background-color: rgba(97, 93, 93, 0.3);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.content4 div mark {
+    color: rgb(164, 198, 59) ;
+    font-weight: bold; 
+    font-size: 2em;
+    background-color: transparent;   
+}
+.container8{
+    width: 80%;
+    height: 70vh;
+    margin: 6em auto;
+    display: flex;
+}
+
+.img{
+    flex:1;
+    background: url("../photos/friends-look-on-laptop_1_.jpg") no-repeat center;
+    background-size: cover;
+}
+.pre3{
+    flex:1;
+    padding:3em;
+    background-color: #F7F8F5;
+}
+.pre3 button{
+    width:25%;
+    height:6vh;
+    border-radius: 50px ;
+    outline: none;
+    background-color: rgb(164, 198, 59) ;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.container9{
+    background-color: #F7F7F7;
+    height: 95vh;
+}
+.content5{
+    width:80%;
+    margin:auto;
+    text-align: center;
+}
+.content5 h1{
+    padding-top: 2em;
+}
+.cardClients{
+    display: flex;
+}
+
+.cardCustomers{
+    width:33%;
+    height:60vh;
+    margin-top: 2em;
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 1.5em;
+    visibility: hidden;
+}
+
+.cardCustomers h2 span{
+    color: rgb(164, 198, 59);
+    font-size: 0.7em;
+}
+.cardCustomers p, .content5 p{
+    color: gray;
+}
+.cardImg5, .cardImg6 ,.cardImg4{
+    height:50%;
+}
+.cardImg4{
+    background: url("../photos/man-in-tailored-suit.jpg") no-repeat top center;
+    background-size: cover;
+}
+.cardImg5{
+    background: url("../photos/young-business-woman-smiling-portrait.jpg") no-repeat center;
+    background-size: cover;
+}
+.cardImg6{
+    background: url("../photos/single-breasted-mens-suit-on-model.jpg") no-repeat center;
+    background-size: cover;
+}
+.CEO{
+    transform:  scale(1.2)
+}
+footer{
+    background-color: #343434;
+    color: white;
+    height:7vh;
+    text-align: center;
+    font-size: 1.1em;
+}
+footer p{
+    margin: auto;
+    padding-top: 1.1em;
+}
+.footer{
+    margin-top: 2em;
+    background-color: #232323;
+    color: white;
+}
+.content6{
+    width: 80%;
+    height:65vh;
+    margin: auto;
+    display: flex;
+}
+.content6 div{
+    margin-top: 4em;
+    margin-right: 2.5em;
+}
+.finance , .links ,.pages , .contacts{
+    flex:1
+}
+
+.content6 p , .content6 li{
+    color:#C7DEDC;
+    line-height: 2em;
+}
+.finance span{
+    border-radius: 50%;
+    color: white;
+    margin-left: 1.2em;
+}
+.finance span:hover{
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    text-decoration: none;
+}
+.pages ul, .links ul{
+padding-left: 0em;
+}
+.input1{
+    background-color: #343434;
+    color: #8491A6;
+    border-radius: 50px;
+    height: 4vh;
+    width:80%;
+    padding-left:2em;
+    margin-bottom: 1.2em;
+}
+.input2{
+    background-color: #343434;
+    color: #8491A6;
+    border-radius: 1.2em;
+    height:20vh;
+    width: 80%;
+    padding-left:2em;
+    margin-bottom: 1.2em;
+}
+.input3{
+    width:52%;
+    height:5vh;
+    border-radius: 50px ;
+    outline: none;
+    background-color: rgb(164, 198, 59) ;
+    color: white;
+    font-weight: bold;
+}
+@media screen and (max-width:767px){
+    h1{
+        font-size: 0.5em;
+    }
+    p , div ,li{
+        font-size: .5em;
+    }
+    .container1 div div{
+        font-size:1.5em ;
+    }
+    .mails {
+        width: 20%;
+    }
+    .container2 h1 {
+        font-size: 8em;
+    }
+    
+    nav ul li{
+        font-size: 6em;
+        margin: 0 0.8em;
+    }
+    .container2{
+        margin-top: 2em;
+    }
+    .container3 h2, .container3 h1,.content3 h1{
+        font-size: 10em;
+    }
+    .container3 h1{
+        width: 70%;
+    }
+    .container3 p{
+        font-size: 5em;
+    }
+    .button1{
+        font-size: 5em;
+        width:35%;
+    }
+    .pre2 button{
+        font-size: 5em;
+        width:85%;
+    }
+    .pre1 h2 {
+        font-size: 7em;
+    }
+    .pre1 p,.content3 p{
+        font-size: 5em;
+    }
+    .cardP ,.cardH ,.cardB{
+        padding: 0 1.3em;
+    }
+    .card h2{
+        font-size: 3em;
+    }
+    .card p{
+        font-size:2.2em
+    }
+    .card button{
+        font-size: 2.5em;
+        width:70%
+    }
+    .shadow2{
+        height: 100%;
+        padding-left: 5em;
+    }
+    .content3 button {
+        font-size: 5em;
+        width: 45%;
+    }
+    .content4 div p,.footer p,.footer li,.footer input{
+        font-size: 4em;
+    }
+    .pre3 h1{
+        font-size: 5em;
+    }
+    .pre3 p{
+        font-size: 3em;
+    }
+    .pre3 button{
+        font-size: 3em;
+        width:60%
+    }
+    
+    .content5,.footer span{
+        font-size: 3em;
+    }
+    .cardCustomers h2{
+        font-size: 1.6em;
+    }
+    .cardCustomers p{
+        font-size: 1.2em;
+    }
+    .footer h2{
+        font-size: 6em;
+    }
+    .footer{
+        height:50vh
+    }
+    .footer .input3{
+        font-size: 3.7em;
+        width:85%
+    }
+}
+@media screen and (min-width:767px) and (max-width:1024px){
+    
+    h1{
+        font-size: 0.5em;
+    }
+    p , div ,li{
+        font-size: .5em;
+    }
+    .container1 div div{
+        font-size:2.2em ;
+    }
+    .mails {
+        width: 30%;
+    }
+    .container2 h1 {
+        width:100%;
+        font-size: 15em;
+    }
+    
+    nav ul li{
+        font-size: 12em;
+        margin: 0 0.8em;
+    }
+    .container2{
+        margin-top: 4em;
+    }
+    .container3 h2, .container3 h1,.content3 h1{
+        font-size: 18em;
+    }
+    .container3 h1{
+        width: 70%;
+    }
+    .container3 p{
+        font-size: 10em;
+    }
+    .button1{
+        font-size: 10em;
+        width:40%;
+    }
+    .pre2 button{
+        font-size: 11em;
+        width:85%;
+    }
+    .pre1 h2 {
+        font-size: 13em;
+    }
+    .pre1 p,.content3 p{
+        font-size: 9em;
+    }
+    .container5 h1{
+        font-size: 7em;
+    }
+    .container5 p {
+        font-size: 3em;
+    }
+    .card{
+        height: 55vh;
+    }
+    .cardP ,.cardH ,.cardB{
+        padding: 0 1.3em;
+    }
+    .card h2{
+        font-size: 7em;
+    }
+    .card p{
+        font-size:4em
+    }
+    .card button{
+        font-size: 4em;
+        width:70%
+    }
+    .shadow2{
+        height: 100%;
+        padding-left: 5em;
+    }
+    .content3 button {
+        font-size: 10em;
+        width: 45%;
+    }
+    .content3 p{
+        font-size: 10em;
+    }
+    .content3 h1{
+        font-size: 18em;
+    }
+    .content4 div p,.footer p,.footer li,.footer input{
+        font-size: 7em;
+    }
+    .pre3 h1{
+        font-size: 10em;
+    }
+    .pre3 p{
+        font-size: 5.5em;
+    }
+    .pre3 button{
+        font-size: 8em;
+        width:70%
+    }
+    
+    .content5,.footer span{
+        font-size: 6em;
+    }
+    .cardCustomers h2{
+        font-size: 1.6em;
+    }
+    .cardCustomers p{
+        font-size: 1.2em;
+    }
+    .footer h2{
+        font-size: 10em;
+    }
+    .footer{
+        height:50vh
+    }
+    .footer .input3{
+        font-size: 6em;
+        width:85%
+    }
+    footer p{
+        font-size: 1.5em;
+    }
+}
+
+
+
