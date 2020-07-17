@@ -223,20 +223,27 @@ nav li:hover{
     width: 80%;
     margin: auto;
     display: flex;
+    margin-bottom: 4em;
 }
 .card{
     background-color: #dad5d96e;
     border-radius: 15px ;
     margin: 0 2em; 
     width:30%;
-    height:50vh;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    text-overflow: ellipsis;
     visibility: hidden;
+    margin-bottom: 1em;
+    overflow-y: auto;
 }
 .pulse{
     animation: zoomIn 2s ease-in-out;
 }
 .cardImg1, .cardImg2 ,.cardImg3{
-    height:40%;
+    width: 100%;
+    height:45%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-bottom: 0;
@@ -257,7 +264,9 @@ nav li:hover{
 .cardP ,.cardH ,.cardB{
     padding: 0 2em;
     margin-top: 1em;
-
+}
+.cardB{
+    margin-bottom: 2em;
 }
 .cardH{
     text-transform: capitalize;
@@ -374,7 +383,8 @@ nav li:hover{
 }
 .container9{
     background-color: #F7F7F7;
-    height: 95vh;
+    height: 105vh;
+    margin-bottom: 5em;
 }
 .content5{
     width:80%;
@@ -386,16 +396,18 @@ nav li:hover{
 }
 .cardClients{
     display: flex;
+    margin-bottom: 5em;
 }
 
 .cardCustomers{
     width:33%;
     height:60vh;
-    margin-top: 2em;
+    margin: 2em 0;
     background-color: white;
     border: 1px solid black;
     margin-right: 1.5em;
     visibility: hidden;
+    overflow-y: auto;
 }
 
 .cardCustomers h2 span{
@@ -405,6 +417,7 @@ nav li:hover{
 .cardCustomers p, .content5 p{
     color: gray;
 }
+
 .cardImg5, .cardImg6 ,.cardImg4{
     height:50%;
 }
@@ -548,7 +561,13 @@ padding-left: 0em;
     .pre1 p,.content3 p{
         font-size: 5em;
     }
-    .cardP ,.cardH ,.cardB{
+    .card{
+        height: 50vh;
+    }
+    .cardImg1,.cardImg2, .cardImg3{
+        height:40%;
+    }
+    .cardP ,.cardH,.cardB {
         padding: 0 1.3em;
     }
     .card h2{
@@ -558,8 +577,9 @@ padding-left: 0em;
         font-size:2.2em
     }
     .card button{
-        font-size: 2.5em;
-        width:70%
+        margin-bottom: 400px;
+        font-size: 2.2em;
+        width:60%;
     }
     .shadow2{
         height: 100%;
@@ -621,7 +641,6 @@ padding-left: 0em;
         width:100%;
         font-size: 15em;
     }
-    
     nav ul li{
         font-size: 12em;
         margin: 0 0.8em;
@@ -659,9 +678,13 @@ padding-left: 0em;
         font-size: 3em;
     }
     .card{
-        height: 55vh;
+        height:60vh;
+        margin-bottom: 7em;
     }
-    .cardP ,.cardH ,.cardB{
+    .cardImg1,.cardImg2,.cardImg3{
+        height:50%;
+    }
+    .cardP ,.cardH {
         padding: 0 1.3em;
     }
     .card h2{
@@ -671,6 +694,7 @@ padding-left: 0em;
         font-size:4em
     }
     .card button{
+        margin-bottom: 10em;
         font-size: 4em;
         width:70%
     }
@@ -709,8 +733,7 @@ padding-left: 0em;
         font-size: 1.6em;
     }
     .cardCustomers p{
-        font-size: 1.2em;
-    }
+        font-size: 1.4em;    }
     .footer h2{
         font-size: 10em;
     }
@@ -721,8 +744,11 @@ padding-left: 0em;
         font-size: 6em;
         width:85%
     }
+    .footer p,.footer li{
+        font-size: 8em;
+    }
     footer p{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
