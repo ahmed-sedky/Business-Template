@@ -88,3 +88,16 @@ window.onscroll = function () {
         } 
     }
 
+var element =document.querySelectorAll('.colorSwitcher li'),
+    classList =[],
+    body = document.getElementById('body');
+
+    body.classList.add(localStorage.getItem('page-color')||"white");
+    for(var i =0 ; i< element.length ; i++){
+        classList.push(element[i].getAttribute('data-color'));
+        element[i].addEventListener('click',function(){
+        body.classList.remove(...classList);
+        body.classList.add(this.getAttribute('data-color'));
+        localStorage.setItem('page-color',this.getAttribute('data-color'));
+    },false);
+    }

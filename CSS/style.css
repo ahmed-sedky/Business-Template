@@ -33,6 +33,39 @@ body{
 .contact div{
     padding: 0 10px 0 0;
 }
+.page{
+    flex:1;
+    justify-content: flex-end;
+}
+.page ul{
+    display: flex;
+    list-style: none;}
+.page ul li{
+    cursor:pointer;
+    margin: 20px ;
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: #18191A;
+}
+.black .card{
+    background-color:white;
+}
+.black .container5 h1{
+    color: white;
+}
+.page ul li:first-child{
+    width:20px;
+    height:20px;
+    background-color: white;
+}
+.page ul li:last-child{
+    width:20px;
+    height:20px;
+    background-color: #18191A;
+}
 .mails{
     display: flex;
     justify-content: flex-end;
@@ -408,6 +441,21 @@ nav li:hover{
     margin-right: 1.5em;
     visibility: hidden;
     overflow-y: auto;
+}
+.cardCustomers1{
+    z-index: 1;
+}
+.cardCustomers2{
+    z-index: 3;
+}
+.cardCustomers3{
+    z-index: 2;
+}
+.black .container9{
+    background-color:#18191A ;
+}
+.black .container9 h1{
+    color: white;
 }
 
 .cardCustomers h2 span{
