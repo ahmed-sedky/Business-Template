@@ -1,17 +1,21 @@
-var div1 =document.getElementById('container3');
 
+var div1 =document.getElementById('container3');
+var h =document.getElementById('typeWriter');
 div1.onclick =function(){
     'use strict';
     this.style.display ='block';
-    div1.classList.add("animate1");
+    //div1.classList.add("animate1");
+    h.classList.add("typewriter");
 };
 window.onload =function(){
     'use strict';
     setTimeout(function(){
         'use strict';
         div1.click();
-    },1000);
+    },2500);
 };
+
+
 var button1 =document.getElementById('button1');
 
 function flip(){
@@ -19,7 +23,7 @@ function flip(){
     button1.style.display ='block';
     button1.classList.add("flip");
 };
-setTimeout(flip,5000);
+setTimeout(flip,6000);
 
 var card1 =document.getElementById("Card1"),
     card2 =document.getElementById("Card2"),
@@ -86,7 +90,37 @@ window.onscroll = function () {
                 cardCustomer3.classList.add("pulse")
             },5000);
         } 
-    }
+        /*
+        if (document.documentElement.scrollTop >= cardCustomer2.offsetTop -600){
+                'use strict';
+                var mytext ="WHO WE ARE";
+                var typeEffect =document.getElementsByClassName("type-effect");
+                var myTime =setInterval(function(){
+                    for(var i = 0;i<mytext.length ;i++){
+                        typeEffect.textContent += mytext[i];
+                        console.log(typeEffect.textContent);
+                        if(i>= mytext.length - 1 ){
+                            clearInterval(myTime);
+                        }
+                    }  
+                },50)
+            }
+            */
+        }
+            /*
+            var myTextEffect = "WHO WE ARE";
+            var i=0;
+            console.log(myTextEffect)
+            //typeEffect.style.visibility = "visible";
+            var myTime2 =setInterval(function(){
+                'use strict';
+                typeEffect.textContent += myTextEffect[i]
+                if(i >= myTextEffect.length -1){
+                    clearInterval(myTime2);
+                }
+                i = i+1;
+            },100);
+            */
 
 var element =document.querySelectorAll('.colorSwitcher li'),
     classList =[],
@@ -101,3 +135,48 @@ var element =document.querySelectorAll('.colorSwitcher li'),
         localStorage.setItem('page-color',this.getAttribute('data-color'));
     },false);
     }
+var comment =document.getElementById('comment'),
+    count =document.getElementById('count'),
+    maxLength = comment.getAttribute('maxlength');
+comment.oninput =function(){
+    'use strict';
+    count.textContent =maxLength - comment.value.length;
+    if (count.textContent == 0){
+        count.style.color ='red';
+    }
+}
+var welcome = document.getElementById('welcome'),
+    myName =document.getElementById('myName');
+    console.log(welcome.textContent);
+myName.onchange =function(){
+    'use strict';
+    welcome.style.fontSize = '0.9em'
+    welcome.textContent =" Welcome To Our Page "+ myName.value ;
+}
+console.log(welcome.textContent);
+
+var myInput =document.querySelectorAll('.input');
+    textArea =document.querySelector('textarea');
+
+myInput.onfocus =function(){
+    'use strict';
+    this.setAttribute('backUp',this.getAttribute('placeholder'));
+    this.setAttribute('placeholder','');
+    console.log("success")
+}
+myInput.onblur =function(){
+    'use strict';
+    this.setAttribute('placeholder',this.getAttribute('backUp'));
+    this.setAttribute('backUp','');
+}
+
+textArea.onfocus =function(){
+    'use strict';
+    this.setAttribute('backUp',this.getAttribute('placeholder'));
+    this.setAttribute('placeholder','');
+}
+textArea.onblur =function(){
+    'use strict';
+    this.setAttribute('placeholder',this.getAttribute('backUp'));
+    this.setAttribute('backUp','');
+}

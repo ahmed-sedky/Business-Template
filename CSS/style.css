@@ -23,13 +23,15 @@ body{
     align-items: center;
 }
 .contact{
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 0 0 10px;
     color: white;
 }
+
 .contact div{
     padding: 0 10px 0 0;
 }
@@ -42,7 +44,7 @@ body{
     list-style: none;}
 .page ul li{
     cursor:pointer;
-    margin: 20px ;
+    margin: 5px ;
 }
 .white{
     background-color: white;
@@ -154,17 +156,43 @@ nav li:hover{
     -o-transition:all 1s linear;
     transition:all 1s linear;
 }
+
+
+.typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    white-space: nowrap; /* Keeps the content on a single line */
+    border-right: .12em solid rgb(164, 198, 59); /* The typwriter cursor */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 6s steps(40, end),
+    blink-caret 0.75s step-end infinite;;
+}
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: rgb(164, 198, 59); }
+}
+
 .container3 h2 ,.container3 h1{
     text-transform: capitalize;
 }
 .container3 h2{
     color:rgb(164, 198, 59) ;
+    width:50%;
     font-size: 2em;
     margin: 0;
 }
 .container3 h1{
     font-size: 3em;
     width: 40%;
+    margin-left: 0;
     margin-top:0.2em;
 }
 .container3 p{
@@ -263,7 +291,7 @@ nav li:hover{
     border-radius: 15px ;
     margin: 0 2em; 
     width:30%;
-    height: 60vh;
+    height: 63vh;
     display: flex;
     flex-wrap: wrap;
     text-overflow: ellipsis;
@@ -307,6 +335,12 @@ nav li:hover{
 .cardP ,.pre3 p{
     color: #6d6b72;
 }
+/*
+.type-effect{
+    visibility: hidden;
+}
+*/
+
 .cardB {
     width:40%;
     height:6vh;
@@ -434,7 +468,7 @@ nav li:hover{
 
 .cardCustomers{
     width:33%;
-    height:60vh;
+    height:63vh;
     margin: 2em 0;
     background-color: white;
     border: 1px solid black;
@@ -514,6 +548,7 @@ footer p{
     flex:1
 }
 
+
 .content6 p , .content6 li{
     color:#C7DEDC;
     line-height: 2em;
@@ -544,6 +579,7 @@ padding-left: 0em;
     padding-left:2em;
     margin-bottom: 1.2em;
 }
+
 .input2{
     background-color: #343434;
     color: #8491A6;
@@ -569,8 +605,16 @@ padding-left: 0em;
     p , div ,li{
         font-size: .5em;
     }
+    
     .container1 div div{
-        font-size:1.5em ;
+        font-size:1.3em ;
+    }
+    .contain {
+        width:100%
+    }
+    .page ul li{
+        width:5px;
+        height: 5px;
     }
     .mails {
         width: 20%;
@@ -588,6 +632,9 @@ padding-left: 0em;
     }
     .container3 h2, .container3 h1,.content3 h1{
         font-size: 10em;
+    }
+    .container3 h2{
+        width:100%;
     }
     .container3 h1{
         width: 70%;
@@ -610,7 +657,7 @@ padding-left: 0em;
         font-size: 5em;
     }
     .card{
-        height: 50vh;
+        height: 45vh;
     }
     .cardImg1,.cardImg2, .cardImg3{
         height:40%;
@@ -625,7 +672,7 @@ padding-left: 0em;
         font-size:2.2em
     }
     .card button{
-        margin-bottom: 400px;
+        margin-bottom: 10px;
         font-size: 2.2em;
         width:60%;
     }
@@ -680,8 +727,20 @@ padding-left: 0em;
         font-size: .5em;
     }
     .container1 div div{
-        font-size:2.2em ;
+        font-size:2em ;
     }
+    .contain {
+        width:100%
+    }
+    .page ul li{
+        margin:2px;
+        width:5px;
+        height: 5px;
+    }
+    /*
+    .contact div{
+        padding: 0 0 0 0;
+    }*/
     .mails {
         width: 30%;
     }
@@ -696,8 +755,17 @@ padding-left: 0em;
     .container2{
         margin-top: 4em;
     }
-    .container3 h2, .container3 h1,.content3 h1{
+    .container3 h2, .container3 h1{
+        font-size: 19em;
+    }
+    .typewriter h2{
+        letter-spacing: .050em;
+    }
+    .content3 h1{
         font-size: 18em;
+    }
+    .container3 h2{
+        width:100%;
     }
     .container3 h1{
         width: 70%;
@@ -742,7 +810,7 @@ padding-left: 0em;
         font-size:4em
     }
     .card button{
-        margin-bottom: 10em;
+        margin-bottom: 1em;
         font-size: 4em;
         width:70%
     }
