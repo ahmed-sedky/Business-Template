@@ -155,19 +155,33 @@ myName.onchange =function(){
 }
 console.log(welcome.textContent);
 
-var myInput =document.querySelectorAll('.input');
+var myInput1 =document.getElementById('myName'),
+    myInput2 =document.getElementById('myEmail'),
     textArea =document.querySelector('textarea');
 
-myInput.onfocus =function(){
+myInput1.onfocus =function(){
     'use strict';
-    this.setAttribute('backUp',this.getAttribute('placeholder'));
-    this.setAttribute('placeholder','');
-    console.log("success")
+    if(this.placeholder === 'Full Name'){
+        this.placeholder = '';
+    }
 }
-myInput.onblur =function(){
+myInput1.onblur =function(){
     'use strict';
-    this.setAttribute('placeholder',this.getAttribute('backUp'));
-    this.setAttribute('backUp','');
+    if(this.placeholder === ''){
+        this.placeholder = 'Full Name';
+    }
+}
+myInput2.onfocus =function(){
+    'use strict';
+    if(this.placeholder === 'E-mail Address'){
+        this.placeholder = '';
+    }
+}
+myInput2.onblur =function(){
+    'use strict';
+    if(this.placeholder === ''){
+        this.placeholder = 'E-mail Address';
+    }
 }
 
 textArea.onfocus =function(){
